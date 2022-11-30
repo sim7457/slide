@@ -1,0 +1,162 @@
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topBanner {
+    position: relative;
+    background: #f9f9f9;
+    margin: 0 0 100;
+}
+
+.topBanner .inner {
+
+    padding: 50px 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.topBanner.on .inner {
+    padding: 0 0;
+    height: 0;
+}
+
+.topBanner .on {
+    height: 0;
+}
+
+
+
+.topBanner i {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, 100%);
+    padding: 10px;
+    background: #f9f9f9;
+    font-size: 30px;
+}
+
+.topBanner .on i {
+    transform: translate(-100%, 100%) rotate(180deg);
+}
+
+.topBanner2 {
+    position: relative;
+    background: #f9f9f9;
+
+}
+
+.topBanner2 .inner {
+    padding: 50px 0;
+}
+
+
+.topBanner2 i {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, 100%);
+    padding: 10px;
+    background: #f9f9f9;
+    font-size: 30px;
+}
+
+.bottomBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f9f9f9;
+}
+
+.bottomBanner .inner {
+    display: none;
+}
+
+
+
+.bottomBanner i {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 600px;
+    transform: translate(-100%, -100%);
+    padding: 10px;
+    background: #f9f9f9;
+    font-size: 30px;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 400px;
+    background: #ff0;
+}
+
+.popup button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.leftBanner {
+    position: absolute;
+    top: 50%;
+    left: -400px;
+    transform: translate(0, -50%);
+    transition: 0.5s;
+}
+
+.leftBanner.on {
+    left: 0;
+
+}
+
+.leftBanner .con {
+    width: 400px;
+    background: tomato;
+
+}
+
+.leftBanner i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0);
+}
+
+.rightBanner {
+    position: absolute;
+    top: 50%;
+    right: -400px;
+    transform: translate(0, -50%);
+}
+
+.rightBanner .con {
+    width: 400px;
+    background: tomato;
+
+}
+
+.rightBanner.on {
+    right: 0;
+}
+
+.rightBanner i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0);
+
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+}
